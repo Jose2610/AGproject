@@ -16,6 +16,7 @@ import ImagePicker from 'react-native-image-picker';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import defaultPic from '../assets/agpic.jpeg';
+import { horizontalScale, normalScale, verticalScale } from './Responsive';
 
 export default function ImageUploader({ uri, onPress }) {
     return (
@@ -25,7 +26,7 @@ export default function ImageUploader({ uri, onPress }) {
 
             <View style={imageStyles.uploadButtonContainer}>
                 <TouchableOpacity onPress={onPress} style={imageStyles.uploadButton}>
-                    <Icon name="edit" size={25} color='blue' />
+                    <Icon name="edit" size={25} color='black' />
                 </TouchableOpacity>
             </View>
         </View>
@@ -34,28 +35,30 @@ export default function ImageUploader({ uri, onPress }) {
 
 const imageStyles = StyleSheet.create({
     container: {
-        height: 150,
-        width: 150,
+        height: verticalScale(150),
+        width: horizontalScale(150),
         position: 'relative',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: verticalScale(25)
     },
     uploadButtonContainer: {
+        elevation: 1,
         position: 'absolute',
-        right: 0,
-        bottom: 0,
+        right: horizontalScale(0),
+        bottom: verticalScale(0),
         backgroundColor: '#fff',
         borderRadius: 999,
-        padding: 7,
+        padding: normalScale(8),
     },
     uploadButton: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     profilePic: {
-        width: 150,
-        height: 150,
+        width: horizontalScale(135),
+        height: verticalScale(135),
         borderRadius: 999,
     },
     borderPic: {
@@ -63,8 +66,6 @@ const imageStyles = StyleSheet.create({
         borderRadius: 999,
         borderColor: 'red',
         borderWidth: 4,
-        width: 150,
-        height: 150,
-        padding: 83
+        padding: normalScale(80)
     }
 })
