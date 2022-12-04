@@ -44,14 +44,14 @@ const Profile = () => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-    <Text style={styles.text1}>My Profile</Text>
-    <ImageUploader uri={uri} onPress={() => setModalVisible(true)}/>
-    <EditModal 
-        isVisible={isModalVisible}
-        onClose={() => setModalVisible(false)}
-        onGalleryPress={onGalleryPress}
-        onCameraPress={onCameraPress}/>
-    <TextField />
+      <Text style={styles.text1}>My Profile</Text>
+      <ImageUploader uri={uri} onPress={() => setModalVisible(true)}/>
+      <EditModal 
+          isVisible={isModalVisible}
+          onClose={() => setModalVisible(false)}
+          onGalleryPress={onGalleryPress}
+          onCameraPress={onCameraPress}/>
+      <TextField />
     </SafeAreaView>
   );
 }

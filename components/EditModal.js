@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Modal from 'react-native-modal';
+import { horizontalScale, normalScale, verticalScale } from './Responsive';
 
 export default function ImagePicker({ isVisible, onClose, onGalleryPress, onCameraPress }) {
     return (
@@ -19,12 +20,12 @@ export default function ImagePicker({ isVisible, onClose, onGalleryPress, onCame
         >
             <SafeAreaView style={styles.buttonGroup}>
                 <TouchableOpacity style={styles.buttonOptions} onPress={onGalleryPress}>
-                    <Icon name='photo-library' size={65} color='black' />
+                    <Icon name='photo-library' size={normalScale(65)} color='black' />
                     <Text style={styles.buttonText}>Gallery</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonOptions} onPress={onCameraPress}>
-                    <Icon name='photo-camera' size={65} color='black' />
+                    <Icon name='photo-camera' size={normalScale(65)} color='black' />
                     <Text style={styles.buttonText}>Camera</Text>
                 </TouchableOpacity>
             </SafeAreaView>
@@ -34,7 +35,7 @@ export default function ImagePicker({ isVisible, onClose, onGalleryPress, onCame
 
 const styles = StyleSheet.create({
     modalStyle: {
-        margin: 0,
+        margin: normalScale(0),
     },  
     buttonGroup: {
         backgroundColor: '#e0e0e0',
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     buttonOptions: {
-        width: 65, 
+        width: horizontalScale(65), 
         justifyContent: 'center',
         alignItems: 'center'
     },

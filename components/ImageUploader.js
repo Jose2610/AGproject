@@ -1,18 +1,9 @@
 import {
-    useState,
-    useEffect
-} from 'react';
-import {
     Image,
-    View,
-    Platform,
-    Pressable,
+    SafeAreaView,
     TouchableOpacity,
-    Text,
     StyleSheet,
-    ImagePickerIOS
 } from 'react-native';
-import ImagePicker from 'react-native-image-picker';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import defaultPic from '../assets/agpic.jpeg';
@@ -20,16 +11,16 @@ import { horizontalScale, normalScale, verticalScale } from './Responsive';
 
 export default function ImageUploader({ uri, onPress }) {
     return (
-        <View style={imageStyles.container}>
-            <View style={imageStyles.borderPic} />
+        <SafeAreaView style={imageStyles.container}>
+            <SafeAreaView style={imageStyles.borderPic} />
             <Image style={imageStyles.profilePic} source={uri ? {uri} : defaultPic} />
 
-            <View style={imageStyles.uploadButtonContainer}>
+            <SafeAreaView style={imageStyles.uploadButtonContainer}>
                 <TouchableOpacity onPress={onPress} style={imageStyles.uploadButton}>
                     <Icon name="edit" size={25} color='black' />
                 </TouchableOpacity>
-            </View>
-        </View>
+            </SafeAreaView>
+        </SafeAreaView>
     )
 }
 
