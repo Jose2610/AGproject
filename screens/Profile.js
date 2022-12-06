@@ -1,9 +1,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import {
-  View,
   SafeAreaView,
   Text,
   StyleSheet,
+  Image
 } from 'react-native';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 
@@ -65,8 +65,10 @@ const styles = StyleSheet.create({
     height: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    position: 'relative'
   },
   text1: {
+    elevation: 1,
     marginBottom: verticalScale(30),
     color: 'black',
     fontSize: normalScale(28)

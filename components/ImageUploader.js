@@ -7,6 +7,7 @@ import {
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import defaultPic from '../assets/agpic.jpeg';
+import { ThemeColors } from '../components/Theme';
 import { horizontalScale, normalScale, verticalScale } from './Responsive';
 
 export default function ImageUploader({ uri, onPress }) {
@@ -31,6 +32,7 @@ const imageStyles = StyleSheet.create({
         position: 'relative',
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop: verticalScale(15),
         marginBottom: verticalScale(25)
     },
     uploadButtonContainer: {
@@ -55,7 +57,7 @@ const imageStyles = StyleSheet.create({
     borderPic: {
         position: 'absolute',
         borderRadius: 999,
-        borderColor: 'red',
+        borderColor: ThemeColors.Extras.MiddleBlueGreen,
         borderWidth: 4,
         padding: normalScale(80)
     }

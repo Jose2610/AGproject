@@ -5,6 +5,7 @@ import {
     TextInput,
     TouchableOpacity,
     StyleSheet,
+    Alert,
 } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import PhoneInput from 'react-native-phone-number-input-formatted';
@@ -19,7 +20,7 @@ const Edit = () => {
     const [phoneNumber, setNewPhone] = useState(route.params.phone);
     const [unformattedNumber, setUnformattedNumber] = useState('');
     const [email, setEmail] = useState(route.params.email);
-    const [bio, setBio] = useState(route.params.bio);
+    const [bio, setBio] = useState(route.params?.bio);
 
     let lastCount = route.params.bio.length;
     const [count, setCount] = useState(lastCount);
@@ -151,22 +152,21 @@ const Edit = () => {
             <TouchableOpacity 
                 title='Save'
                 style={styles.buttonContainer}
-                onPress={() => {
-                    { 
-                        
-                        if (!validateName(name) || !validateEmail(email) || !validatePhone(unformattedNumber) || !validateBio(bio)) {
-                        
+                onPress={() => {{ 
+                    if (!validateName(name) || !validateEmail(email) || !validatePhone(unformattedNumber) || !validateBio(bio)) {
+                        Alert.alert('Alert', "Can't save with these values!")
                     } else {
-                    navigation.navigate({
-                        name: 'Profile',
-                        params: { 
-                            name: name, 
-                            phone: unformattedNumber, 
-                            email: email,
-                            bio: bio
-                        },
-                        merge: true
-                    })}};
+                        navigation.navigate({
+                            name: 'Profile',
+                            params: { 
+                                name: name, 
+                                phone: unformattedNumber, 
+                                email: email,
+                                bio: bio
+                            },
+                            merge: true
+                        })
+                    }};
                 }}>
                     <Text style={styles.button}>Save</Text>
                 </TouchableOpacity>
