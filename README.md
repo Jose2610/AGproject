@@ -66,7 +66,7 @@ Click on the run button ► on the AVD you want to emulate with to start the emu
 
 #### Step 5:
 
-Once the emulated device has started up, navigate the AGproject folder to find the built APK. The location should be AGproject\android\app\build\outputs\apk\release\app-release.apk. Then simply drag and drop the file onto the emulated device. A tooltip should appear saying **APK's will be installed.**. The application should then be installed on the device and should be ready to run!
+Once the emulated device has started up, navigate the AGproject folder to find the built APK. The location should be AGproject\android\apks\app-release.apk. Then simply drag and drop the file onto the emulated device. A tooltip should appear saying **APK's will be installed.**. The application should then be installed on the device and should be ready to run!
 
 > *If you would like to run the application on a real Android device, simply use the APK found in step 5 and place that in your phone's storage device. Then, on your phone, open the files app and locate the APK copied on your device. Click on the apk and the application should download. However, I do understand the issues with privacy that may come with installing an untrusted application on your device. If you would not like to do this, then please follow the virtual guide. I will include a video that shows the apk being installed and used on my personal device, that way you do not need to download it onto your device.*
 
