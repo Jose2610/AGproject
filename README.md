@@ -1,5 +1,5 @@
 # Approachable Geek Coding Project
-This mobile application is a coding project by Approachable Geek to show where my technical skills are currently.
+This mobile application is a coding project by Approachable Geek to demonstrate where my technical skills currently are.
 
 ## Coding Assignment
 
