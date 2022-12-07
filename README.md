@@ -16,7 +16,7 @@ This mobile application is a coding project by Approachable Geek to demonstrate 
 
 For this coding project, I decided to use React Native as my mobile framework, as I already have some experience with React and a little bit with React Native. Also, React Native can build native apps for Android and iOS, which made it easier to program, test, and build. I also used several packages to make designing simple, such as an image picker, a modal component, an icon library, and a phone number formatter.
 
-Throught the project, I used the UI provided as a guide to use while programming. I decided to create the application in parts, two screens and several components. One screen was used for the profile page, while the second screen was used for editting the user's profile.
+Throught the project, I used the UI provided as a guide to use while programming. I decided to create the application in parts, two screens and several components. One screen was used for the profile page, while the second screen was used for editing the user's profile.
 
 ### Mobile Technologies Used
 
