@@ -30,6 +30,27 @@ Throught the project, I used the UI provided as a guide to use while programming
 - react-native-phone-number-input-formatted
 - react-native-vector-icons
 
+## Progress Timeline
+
+As I was tasked with keeping track of how long it took me to program this application, I thought it be nice to show the kind of process I made throughout each day. Below is a brief description of what I spent most of my time working on this project.
+
+#### Wednesday
+
+Wednesday afternoon I spend **2 hours** setting up React Native and Andriod Studio, including all the necessary tools to start production. There were some virtualization issues, as the computer I have is still new and I'm still figuring out how to deal with AMD-specific processes, but I was finally successful in running the test application onto a virtual Android device.
+
+#### Thursday
+
+I spent around **5 hours** programming the main profile page, being able to complete the profile picture component, including getting pictures from the user's gallery and/or taking a picture and replacing the old profile picture with the newly selected one. I did have some problems when the camera refused to open on the virtual device, but this was later solved by adding Android Permissions to access the user's camera and storage. I also had fun stylizing the profile picture component, as I was also learning more about how to use React Native and its StyleSheets.
+
+#### Friday
+
+I then started to add the fields onto the profile page (name, email, phone number, and bio) and styled it similarly to the UI example given. Afterward, I began to work on the second screen, the Edit page, where the user can modify their profile page with the fields used. I was able to implement validations for each field, making sure it made sense that the user was editing appropriately. I was also successful in moving the values from the profile fields from the profile page to the edit page, and once the changes were made, the new values would then overwrite the previous fields, updating the profile page. This took around **7 hours** to accomplish.
+
+#### Saturday
+Starting on Saturday, I cleaned up my code and began the process of building the application for Android. This process took **3 hours**, as the step-by-step guide on React Native's website was quite helpful in making the process simple and easy. Finally, after the APK was made, I tested the APK file on both virtual and real devices, each being successful.
+
+Overall, this project took me around **17 hours** to complete. Whether or not this is swift or sluggish, I do feel as if I finished too quickly, and gave me the feeling that I was missing something important. However, I do know that it would have taken longer if I was able to build the application on iOS, and if I was given an Apple computer capable to install the necessary libraries and tools I could have finished the build just as quickly as building the Android apk. This is not due to my programming abilities per se, but it mainly comes down to React Native having native code that translates well to both Android and iOS platforms. All in all, this project was delightful to be a part of and I thank Approachable Geek for allowing me to attempt something I didn't think I could reach without being put outside of my comfort zone and attempting something new.
+
 ## Issues
 
 There are several issues that I did come across while creating this application, though most of the issues do not affect the performance or the installation of the app. 
@@ -40,7 +61,7 @@ Another minor issue I came across was when inputting a black bio, the bio would 
 
 ## Final Remarks
 
-Overall, I had quite a lot of fun learning to use React Native again after some time, and after using React for side projects and testing new ideas, it was a lot easier to use React Native than before in university. There can always be improvements, especially on the issues I specified and some of the design choices I made, but I'm quite happy with what I was able to accomplish in this coding project.
+Overall, I had quite a lot of fun learning how to use React Native again after some time, and after using React for side projects and testing new ideas, it was a lot easier to use React Native than before in university. There can always be improvements, especially on the issues I specified and some of the design choices I made, but I'm quite happy with what I was able to accomplish in this coding project.
 
 ## Installation Guide/Running the Application
 
@@ -68,6 +89,7 @@ Click on the run button ► on the AVD you want to emulate with to start the emu
 
 Once the emulated device has started up, navigate the AGproject folder to find the built APK. The location should be AGproject\android\apks\app-release.apk. Then simply drag and drop the file onto the emulated device. A tooltip should appear saying **APK's will be installed.**. The application should then be installed on the device and should be ready to run!
 
-> *If you would like to run the application on a real Android device, simply use the APK found in step 5 and place that in your phone's storage device. Then, on your phone, open the files app and locate the APK copied on your device. Click on the apk and the application should download. However, I do understand the issues with privacy that may come with installing an untrusted application on your device. If you would not like to do this, then please follow the virtual guide. I will include a video that shows the apk being installed and used on my personal device, that way you do not need to download it onto your device.*
+> *If you would like to run the application on a real Android device, simply place the APK found in step 5 and place that in your phone's storage device. Then, on your phone, open the files app and locate the APK copied on your device. Click on the apk and the application should download. However, I do understand the issues with privacy that may come with installing an untrusted application on your device. If you would not like to do this, then please follow the virtual guide. I will post a video that you could view from my device with the apk being installed and used, however, if you decide not to download it onto your device.*
 
 ### Running Application on iOS (Virtual)
+Unfortunately, I do not have/own a Mac or Apple computer to program this application onto iOS, therefore I could not build and test the application on iOS devices. I was however able to borrow a MacBook from a friend but was unsuccessful in downloading the necessary packages to set up the development environment of the program. While I am not sure if the application would have run without any modifications or tweaks, I am still happy to have at least accomplished building and running the application on Android.
