@@ -9,7 +9,7 @@ This mobile application is a coding project by Approachable Geek to show where m
 
 - Use any mobile technology(ies) you desire.
 - Allow users to edit their profile information, including: name, number, email, and bio.
-- Use the provided UI as a guide.
+- Use the provided UI as a guide (https://xd.adobe.com/view/58778ee1-0bc4-40d9-55fb-cea5b22ab1c8-2e46/).
 - Bonus: Allow the users to edit their profile picture.
 
 ## Approach
@@ -36,20 +36,20 @@ As I was tasked with keeping track of how long it took me to program this applic
 
 #### Wednesday
 
-Wednesday afternoon I spend **2 hours** setting up React Native and Andriod Studio, including all the necessary tools to start production. There were some virtualization issues, as the computer I have is still new and I'm still figuring out how to deal with AMD-specific processes, but I was finally successful in running the test application onto a virtual Android device.
+> Wednesday afternoon I spend ***2 hours*** setting up React Native and Andriod Studio, including all the necessary tools to start production. There were some virtualization issues, as the computer I have is still new and I'm still figuring out how to deal with AMD-specific processes, but I was finally successful in running the test application onto a virtual Android device.
 
 #### Thursday
 
-I spent around **5 hours** programming the main profile page, being able to complete the profile picture component, including getting pictures from the user's gallery and/or taking a picture and replacing the old profile picture with the newly selected one. I did have some problems when the camera refused to open on the virtual device, but this was later solved by adding Android Permissions to access the user's camera and storage. I also had fun stylizing the profile picture component, as I was also learning more about how to use React Native and its StyleSheets.
+> I spent around ***5 hours*** programming the main profile page, being able to complete the profile picture component, including getting pictures from the user's gallery and/or taking a picture and replacing the old profile picture with the newly selected one. I did have some problems when the camera refused to open on the virtual device, but this was later solved by adding Android Permissions to access the user's camera and storage. I also had fun stylizing the profile picture component, as I was also learning more about how to use React Native and its StyleSheets.
 
 #### Friday
 
-I then started to add the fields onto the profile page (name, email, phone number, and bio) and styled it similarly to the UI example given. Afterward, I began to work on the second screen, the Edit page, where the user can modify their profile page with the fields used. I was able to implement validations for each field, making sure it made sense that the user was editing appropriately. I was also successful in moving the values from the profile fields from the profile page to the edit page, and once the changes were made, the new values would then overwrite the previous fields, updating the profile page. This took around **7 hours** to accomplish.
+> I then started to add the fields onto the profile page (name, email, phone number, and bio) and styled it similarly to the UI example given. Afterward, I began to work on the second screen, the Edit page, where the user can modify their profile page with the fields used. I was able to implement validations for each field, making sure it made sense that the user was editing appropriately. I was also successful in moving the values from the profile fields from the profile page to the edit page, and once the changes were made, the new values would then overwrite the previous fields, updating the profile page. This took around ***7 hours*** to accomplish.
 
 #### Saturday
-Starting on Saturday, I cleaned up my code and began the process of building the application for Android. This process took **3 hours**, as the step-by-step guide on React Native's website was quite helpful in making the process simple and easy. Finally, after the APK was made, I tested the APK file on both virtual and real devices, each being successful.
+> Starting on Saturday, I cleaned up my code and began the process of building the application for Android. This process took ***3 hours***, as the step-by-step guide on React Native's website was quite helpful in making the process simple and easy. Finally, after the APK was made, I tested the APK file on both virtual and real devices, each being successful.
 
-Overall, this project took me around **17 hours** to complete. Whether or not this is swift or sluggish, I do feel as if I finished too quickly, and gave me the feeling that I was missing something important. However, I do know that it would have taken longer if I was able to build the application on iOS, and if I was given an Apple computer capable to install the necessary libraries and tools I could have finished the build just as quickly as building the Android apk. This is not due to my programming abilities per se, but it mainly comes down to React Native having native code that translates well to both Android and iOS platforms. All in all, this project was delightful to be a part of and I thank Approachable Geek for allowing me to attempt something I didn't think I could reach without being put outside of my comfort zone and attempting something new.
+Overall, this project took me around ***17 hours*** to complete. Whether or not this is swift or sluggish, I do feel as if I finished too quickly, and gave me the feeling that I was missing something important. However, I do know that it would have taken longer if I was able to build the application on iOS, and if I was given an Apple computer capable to install the necessary libraries and tools I could have finished the build just as quickly as building the Android apk. This is not due to my programming abilities per se, but it mainly comes down to React Native having native code that translates well to both Android and iOS platforms. All in all, this project was delightful to be a part of and I thank Approachable Geek for allowing me to attempt something I didn't think I could reach without being put outside of my comfort zone and attempting something new.
 
 ## Issues
 
